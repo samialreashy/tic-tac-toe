@@ -1,4 +1,13 @@
 //this like a list contain all possibles numbers to win 
+
+const   sqEl=document.querySelectorAll(".sqr")
+const   mesgEl=document.querySelector("#message")
+const   resetBtn=document.querySelector("#reset")
+let board   
+let turn   
+let winner
+
+
 const allOptionsTowin=
 [
   [0,1,2], 
@@ -10,13 +19,6 @@ const allOptionsTowin=
   [0,4, 8], 
   [2,4, 6]  
 ];
-
-const   sqEl=document.querySelectorAll(".sqr")
-const   mesgEl=document.querySelector("#message")
-const   resetBtn=document.querySelector("#reset")
-let board   
-let turn   
-let winner
 
 function init(){
 board=['', '', '', '', '', '', '', '', '']
